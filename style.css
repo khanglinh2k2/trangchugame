@@ -1,0 +1,195 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*
+    1.từ trên xuống dưới 
+    2.từ ngoài vào trong
+    3.từ tổng quan đến chi tiết
+ */
+/*
+    1.vị trí 
+    2.kích thước
+    3.màu sắc
+    4.kiểu chữ
+ */
+html{
+     font-family: Arial, Helvetica, sans-serif;
+ }
+#main{
+
+}
+#nav{
+    display: inline-block;
+}
+#header{
+    position: fixed;
+    height: 48px;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+#nav, .subnav{
+    list-style-type: none;
+}
+#nav > li{
+    display: inline-block;
+}
+
+#nav li{ 
+    position: relative;
+}
+#nav > li > a{
+    color: #fff;
+    text-transform: uppercase;
+}
+#nav li a{
+    line-height: 48px;
+    padding: 0 24px;
+    text-decoration: none;
+    display: block;
+
+}
+
+#nav li:hover .subnav {
+    display: block;
+    background-color: rosybrown;
+}
+#nav .subnav li:hover a,
+#nav > li:hover > a{
+    background-color: #ccc;
+    color: orangered;
+}
+
+#nav .subnav{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    
+}
+#nav .subnav a{
+    color: #fff;
+    padding: 0 12px;
+    line-height: 37px ;
+}
+#nav .subnav li > a{
+    color: #fff;
+    line-height: 37px;
+    text-align: center;
+    font-size: 15px;
+}
+#nav .ti-angle-down{
+    font-size: 10px;
+}
+
+#header .tis-search{
+    float: right;
+    cursor: pointer;
+}
+#header .ti-search{
+    color: #fff;
+    line-height: 48px;
+    padding: 13px 26px;
+    
+}
+#header .tis-search:hover .ti-search {
+    background-color: #ccc;
+    color: orangered;
+}
+
+#slider{
+    margin-top: 48px;
+    padding-top: 50%;
+    position: relative;
+    background: url(/code/asset/img/e9be9e5b2dd358f94e289e5535e76455.jpg) top center / cover no-repeat;
+    background-size: 100%;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+
+
+}
+#slider .text-writing{
+    position: absolute;
+    bottom: 47px;
+    width: 100%;
+    color: red;
+    text-align: center;
+    
+
+}
+
+#slider .text-writing1{
+    padding: 13px;
+    font-size: 24px;
+
+}
+#slider .text-writing2{
+    font-size: 15px;
+}
+
+
+#content{
+
+}
+.text-about{
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    padding: 64px 0;
+    
+
+}
+
+.text-about1{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 5px;
+
+}
+
+.text-about2{
+    padding: 24px;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 23px;
+
+}
+
+#content .member-item{
+    float: right;
+    background-size: 50px;
+
+}
+#contnet .members-list{
+    position: relative;
+}
+.member-item{
+
+}
+.member-name{
+    text-align: center;
+    font-size: 20px;
+    color: rebeccapurple;
+    padding: 20px;
+}
+.member-img{
+    background-size: 10px;
+    padding: 10px;
+}
+.member-img:hover{
+    background-color: orangered;
+    cursor: pointer;
+    
+}
+
+
+#foter{
+
+}
